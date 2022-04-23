@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:mini_practice/views/home.dart';
-
 import 'views/home_api.dart';
 
 void main() {
@@ -20,6 +17,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ),
-        home: Home());
+        home: const Home());
   }
 }

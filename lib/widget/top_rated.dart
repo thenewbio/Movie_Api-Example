@@ -9,7 +9,7 @@ class TopRatedMovies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -39,7 +39,8 @@ class TopRatedMovies extends StatelessWidget {
                             ),
                             height: 200,
                           ),
-                          SizedBox(height: 5),
+                          const SizedBox(height: 5),
+                          // ignore: avoid_unnecessary_containers
                           Container(
                             child: Modifiedtext(
                               size: 15,
