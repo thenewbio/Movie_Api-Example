@@ -9,7 +9,11 @@ class TopRatedMovies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+<<<<<<< HEAD
       padding: const EdgeInsets.all(10),
+=======
+      padding: EdgeInsets.all(10),
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -39,8 +43,12 @@ class TopRatedMovies extends StatelessWidget {
                             ),
                             height: 200,
                           ),
+<<<<<<< HEAD
                           const SizedBox(height: 5),
                           // ignore: avoid_unnecessary_containers
+=======
+                          SizedBox(height: 5),
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
                           Container(
                             child: Modifiedtext(
                               size: 15,

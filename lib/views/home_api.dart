@@ -7,13 +7,9 @@ import '../widget/trending.dart';
 import '../widget/tv.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
-
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
+<<<<<<< HEAD
+  const Home({Key? key}) : super(keylass _HomeState extends State<Home> {
+<<<<<<< HEAD
   // put your apiKey inside the String apiKey
   final String apikey = 'c2151f23cc2be082d3d302a4d4de898b';
 
@@ -21,6 +17,11 @@ class _HomeState extends State<Home> {
   final String readaccesstoken =
       'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMjE1MWYyM2NjMmJlMDgyZDNkMzAyYTRkNGRlODk4YiIsInN1YiI6IjYyMzlhOGJhOGVjNGFiMDA0NGYwZTIwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KttDaxMTGIYbrvuLWdjnH44HCrMtlugY6NiZ0DkNYv0';
 
+=======
+  final String apikey = 'c2151f23cc2be082d3d302a4d4de898b';
+  final String readaccesstoken =
+      'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMjE1MWYyM2NjMmJlMDgyZDNkMzAyYTRkNGRlODk4YiIsInN1YiI6IjYyMzlhOGJhOGVjNGFiMDA0NGYwZTIwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KttDaxMTGIYbrvuLWdjnH44HCrMtlugY6NiZ0DkNYv0';
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
   List trendingmovies = [];
   List topratedmovies = [];
   List tv = [];
@@ -34,7 +35,11 @@ class _HomeState extends State<Home> {
   loadmovies() async {
     TMDB tmdbWithCustomLogs = TMDB(
       ApiKeys(apikey, readaccesstoken),
+<<<<<<< HEAD
       logConfig: const ConfigLogger(
+=======
+      logConfig: ConfigLogger(
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
         showLogs: true,
         showErrorLogs: true,
       ),
@@ -44,7 +49,11 @@ class _HomeState extends State<Home> {
     Map topratedresult = await tmdbWithCustomLogs.v3.movies.getTopRated();
     // ignore: deprecated_member_use
     Map tvresult = await tmdbWithCustomLogs.v3.tv.getPouplar();
+<<<<<<< HEAD
     // print((trendingresult));
+=======
+    print((trendingresult));
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
     setState(() {
       trendingmovies = trendingresult['results'];
       topratedmovies = topratedresult['results'];
@@ -58,7 +67,11 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Modifiedtext(
+<<<<<<< HEAD
             text: 'Flutter Movie Api ❤️',
+=======
+            text: 'Flutter Movie App ❤️',
+>>>>>>> e59f2e44272ee03c084b7339cb34ddc6955da269
             size: 20,
             color: Colors.white,
           ),
